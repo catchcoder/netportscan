@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+LLDP neighbors:
+-------------------------------------------------------------------------------
+Interface:    enp0s13f0u2u4, via: LLDP, RID: 1, Time: 0 day, 00:00:03
+  Chassis:     
+    ChassisID:    mac f4:7f:35:2f:00:ef
+    SysName:      switch1.example.com
+    SysDescr:     Cisco IOS Software, C2960S Software (C2960S-UNIVERSALK9-M), Version 15.2(2)E9, RELEASE SOFTWARE (fc4)
+                  Technical Support: http://www.cisco.com/techsupport
+                  Copyright (c) 1986-2018 by Cisco Systems, Inc.
+                  Compiled Sat 08-Sep-18 14:56 
+    MgmtIP:       172.20.17.10
+    Capability:   Bridge, on
+    Capability:   Router, off
+  Port:        
+    PortID:       ifname Gi1/0/33
+    PortDescr:    GigabitEthernet1/0/33
+    TTL:          120
+    PMD autoneg:  supported: yes, enabled: yes
+      Adv:          10Base-T, HD: yes, FD: yes
+      Adv:          100Base-TX, HD: yes, FD: yes
+      Adv:          1000Base-T, HD: no, FD: yes
+      MAU oper type: 1000BaseTFD - Four-pair Category 5 UTP, full duplex mode
+-------------------------------------------------------------------------------
+
+
+
