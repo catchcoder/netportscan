@@ -7,7 +7,7 @@
 - Linux/Unix system with bash shell
 - `lldpd` service installed and available
 - `sudo` privileges (required for service restart and lldpctl commands)
-- Active network interface (default: `enp0s13f0u2u2`)
+- Active network interface (default: `eth0`)
 
 ## What the Script Does
 1. Restarts the `lldpd` service
@@ -97,7 +97,7 @@ sudo bash restart_lldpd.sh
 ## Related Files
 - `install_lldpd.sh` - Installation script for lldpd
 - `show_heighbours.sh` - View LLDP neighbors information
-- `neighors.txt` - Sample neighbor information
+- `SAMPLE LDP neighbors Interface.txt` - Sample LLDP output
 
 ## Notes
 - The script uses a 2-second timeout between polling attempts
