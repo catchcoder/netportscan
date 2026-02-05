@@ -6,7 +6,7 @@ sudo service lldpd restart
 # Loop until the contents of neighbors.txt are received
 while true; do
     # Run the lldpctl command and capture the output
-    interface="enp0s13f0u2u2"
+    interface="eth0" # "enp0s13f0u2u2"
     output=$(sudo lldpctl "$interface")
 
     # Check if the output contains the expected lines
