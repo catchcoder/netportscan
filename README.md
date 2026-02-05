@@ -6,6 +6,15 @@ This repository contains bash scripts and utilities for discovering and managing
 
 The `netportscan` project provides tools to install, restart, and query the LLDP daemon (`lldpd`) to discover network neighbor information. This is useful for network administration, device inventory, and connectivity troubleshooting.
 
+## Set up Raspberry Pi
+
+1. Run "sudo dpkg-reconfigure console-setup"
+2. Choose:
+   1. UTF-8
+   2. Character set: Guess optimal
+   3. Font: Terminus
+   4. Font size: 12x24 or 11x22
+
 ## Files
 
 ### Scripts
@@ -33,9 +42,6 @@ The `netportscan` project provides tools to install, restart, and query the LLDP
   - Prerequisites and configuration options
   - Usage instructions
   - Troubleshooting guide
-
-- **`neighors.txt`** - Sample neighbor information captured from LLDP
-  - Example output from LLDP discovery
 
 - **`SAMPLE LDP neighbors Interface.txt`** - Sample LLDP output
   - Reference data showing expected LLDP output format
