@@ -19,17 +19,15 @@ while true; do
             echo "$output" | grep "PortDescr:" | sed 's/^[[:space:]]*//'
             echo "$output" | grep "VLAN:" | sed 's/^[[:space:]]*//'
             echo "---"
-        } > ~/output.txt
-        break
+        } > ~/output.txt  
+        # Append captured data to log file with timestamp
+        {
+            echo "$(date '+%Y-%m-%d %H:%M:%S')"
+            echo "$output"
+            echo "---"
+        } >> ~/lldp_log.txt
     fi
     # Sleep for a short duration before the next iteration
     sleep 2
 done
-# Append captured data to log file with timestamp
-{
-    echo "$(date '+%Y-%m-%d %H:%M:%S')"
-    echo "$output"
-    echo "---"
-} >> ~/lldp_log.txt
-# Stop the lldpd service
-sudo service lldpd stop
+
