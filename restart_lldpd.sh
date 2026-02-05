@@ -3,7 +3,7 @@
 # Restart the lldpd service
 sudo service lldpd restart
 
-# Loop until the contents of neighors.txt are received
+# Loop until the contents of neighbors.txt are received
 while true; do
     # Run the lldpctl command and capture the output
     interface="enp0s13f0u2u2"
