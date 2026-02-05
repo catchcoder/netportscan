@@ -96,10 +96,10 @@ class OutputTUI(App):
     TITLE = "Network Port Scan"
     
     def __init__(self, output_file: str = "output.txt"):
-        super().__init__()
         self.output_file = output_file
         self.output_display = None
         self.current_file = output_file
+        super().__init__()
     
     def compose(self) -> ComposeResult:
         """Create child widgets for the app"""
