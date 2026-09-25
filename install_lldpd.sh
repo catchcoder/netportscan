@@ -11,6 +11,8 @@ sudo service lldpd start
 # Enable lldpd to start on boot
 sudo systemctl enable lldpd
 
+sudo systemctl deamon-reload 
+
 echo "Tools installation and setup completed successfully!"
 
 
